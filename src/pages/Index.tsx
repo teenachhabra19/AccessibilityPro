@@ -67,7 +67,7 @@ const Index = () => {
     try {
       // Make API call to Spring Boot backend with URL as query parameter
       const encodedUrl = encodeURIComponent(url);
-      const response = await fetch(`https://accessibility-analyzer-production.up.railway.app/api/analyze-url?url=${encodedUrl}`, {
+      const response = await fetch(`https://accessibility-analyzer-1.onrender.com/api/analyze-url?url=${encodedUrl}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
